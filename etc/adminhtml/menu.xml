@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Metagento_NewsletterDiscountPro::newsletterdiscountpro"
+             title="Newsletter Discount" module="Metagento_NewsletterDiscountPro"
+             parent="Magento_Backend::marketing_communications"
+             action="newsletterdiscountpro/program/index"
+             resource="Metagento_NewsletterDiscountPro::program" sortOrder="100"/>
+    </menu>
+</config>

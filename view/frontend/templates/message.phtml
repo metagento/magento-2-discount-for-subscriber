@@ -1,0 +1,18 @@
+<?php
+/**
+ * @var \Metagento\NewsletterDiscountPro\Block\Message $block
+ */
+?>
+
+<?php if ( $block->showMessage() ): ?>
+
+    <script type="text/javascript">
+        require(['jquery'], function ($) {
+            $(document).ready(function(){
+                jQuery('.block.newsletter').append("<p class='newsletter-discount'><?php echo $block->getMessage() ?></p>");
+            });
+        });
+    </script>
+
+<?php endif ?>
+

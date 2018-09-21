@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="sales_model_service_quote_submit_before">
+        <observer name="newsletterdiscountpro_sales_model_service_quote_submit_before"
+                  instance="Metagento\NewsletterDiscountPro\Observer\FieldSet"/>
+    </event>
+    <event name="controller_action_predispatch_checkout_cart_couponPost">
+        <observer name="newsletterdiscountpro_controller_action_predispatch_checkout_cart_couponPost"
+                  instance="Metagento\NewsletterDiscountPro\Observer\CouponPost"/>
+    </event>
+</config>

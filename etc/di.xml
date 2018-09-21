@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Quote\Model\CouponManagement">
+        <plugin name="check_newslettter_coupon_code"
+                type="Metagento\NewsletterDiscountPro\Plugin\Quote\CouponManagement"/>
+    </type>
+
+    <type name="Metagento\NewsletterDiscountPro\Model\ResourceModel\Program\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">newsletterdiscountpro_program</argument>
+            <argument name="resourceModel" xsi:type="string">Metagento\NewsletterDiscountPro\Model\ResourceModel\Program</argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="newsletterdiscount_program_listing_data_source" xsi:type="string">Metagento\NewsletterDiscountPro\Model\ResourceModel\Program\SearchResult</item>
+            </argument>
+        </arguments>
+    </type>
+
+</config>

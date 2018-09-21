@@ -1,0 +1,49 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../Backend/etc/system_file.xsd">
+    <system>
+        <tab id="metagento" translate="label" sortOrder="700" class="metagento-extensions">
+            <label>Metagento Extensions</label>
+        </tab>
+        <section id="newsletterdiscountpro" translate="label" sortOrder="1" showInDefault="1"
+                 showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Newsletter Discount Advanced</label>
+            <tab>metagento</tab>
+            <resource>Metagento_NewsletterDiscountPro::config_newsletter_discount</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1"
+                   showInWebsite="1" showInStore="1">
+                <comment><![CDATA[<p><strong>If you need help with any function of Magento, we provide Custom Development Service, please visit our website to review our service: <a href="https://www.metagento.com">https://www.metagento.com</a></strong></p>]]></comment>
+                <label>General Configuration</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable extension</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="message" translate="label" type="text" sortOrder="30" showInDefault="1"
+                   showInWebsite="1" showInStore="1">
+                <label>Message Configuration</label>
+                <field id="show_newsletter_box" translate="label" type="select" sortOrder="60"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show message in Newsletter box</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment></comment>
+                </field>
+                <field id="message_newsletter_box" translate="label" type="textarea" sortOrder="70"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Message in Newsletter box</label>
+                    <comment>HTML code is valid.</comment>
+                </field>
+            </group>
+            <group id="customize" translate="label" type="text" sortOrder="999" showInDefault="1"
+                   showInWebsite="1" showInStore="1">
+                <label>Customize </label>
+                <field id="customize" translate="label" type="note" sortOrder="10"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>If you want to customize this extension, please contact us:</label>
+                    <comment>support@metagento.com</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

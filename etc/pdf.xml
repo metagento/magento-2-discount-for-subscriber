@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Sales:etc/pdf_file.xsd">
+    <totals>
+        <total name="newsletter_discount">
+            <title translate="true">Newsletter Discount</title>
+            <source_field>newsletter_discount</source_field>
+            <model>Metagento\NewsletterDiscountPro\Model\Total\Pdf\NewsletterDiscount</model>
+            <font_size>7</font_size>
+            <display_zero>false</display_zero>
+            <sort_order>140</sort_order>
+        </total>
+    </totals>
+</config>

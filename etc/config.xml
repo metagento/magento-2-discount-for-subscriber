@@ -1,0 +1,19 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <newsletterdiscountpro>
+            <general>
+                <enabled>0</enabled>
+                <number_order>1</number_order>
+            </general>
+            <discount>
+                <discount_type>1</discount_type>
+                <discount_value>0</discount_value>
+                <use_coupon>0</use_coupon>
+            </discount>
+            <message>
+                <show_newsletter_box>1</show_newsletter_box>
+                <message_newsletter_box></message_newsletter_box>
+            </message>
+        </newsletterdiscountpro>
+    </default>
+</config>
